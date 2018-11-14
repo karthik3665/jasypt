@@ -10,6 +10,21 @@
     <description>Demo project to include for encryption for Spring Boot</description>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>lib-snapshots</name>
+        <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+	    <repository>
+        <id>central</id>
+        <name>lib-releases</name>
+        <url>http://localhost:8081/artifactory/libs-release-local</url>
+    </repository>
+
+</distributionManagement>
+
+
     <properties>
         <jasypt.version>2.0.0</jasypt.version>
     </properties>

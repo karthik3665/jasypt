@@ -11,3 +11,4 @@
 - 1.3 added support for PMD
   - fixed trivial issue of javadoc plugin not reporting any version  
   - Not addressing "clean look" for PMD report.. 
+- 1.4 added support for Artifactory
