@@ -71,11 +71,27 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
+		  <version>3.0.1</version>
           <configuration>
             <additionalparam>-Xdoclint:none</additionalparam>
           </configuration>
         </plugin>
 		
+		      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <rulesets>
+            <ruleset>/category/java/bestpractices.xml</ruleset>
+            <ruleset>rulesets/ruleset_basics.xml</ruleset>
+            <ruleset>rulesets/ruleset_security.xml</ruleset>
+           <!-- Custom remote rule set accessed via a URL -->
+            <!-- <ruleset>http://localhost/design.xml</ruleset> --> 
+          </rulesets>
+        </configuration>
+      </plugin>
+	  
 
         </plugins>
     </build>
