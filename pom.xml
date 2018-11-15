@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
     <name>spring-boot-jasypt</name>
     <description>Demo project to include for encryption for Spring Boot</description>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 
 	<distributionManagement>
     <snapshotRepository>
